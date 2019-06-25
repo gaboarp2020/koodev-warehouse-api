@@ -13,7 +13,7 @@ const sequelize = new Sequelize(
 
 const models = {
   User: sequelize.import('./user'),
-  Message: sequelize.import('./product'),
+  Product: sequelize.import('./product'),
 };
 
 
