@@ -39,7 +39,7 @@ const port = process.env.PORT
 app.use(cors())
 
 // Check Token Middleware
-app.use(checkToken)
+// app.use(checkToken)
 
 // Apollo Middleware
 server.applyMiddleware({
@@ -56,7 +56,9 @@ models.sequelize
     console.error('Unable to connect to the database:', err)
   })
 
-models.sequelize.sync().then(() => app.listen(port, () => {
+models.sequelize.sync({
+  force: false
+}).then(() => app.listen(port, () => {
   console.log(
     `🚀 Server ready at http://localhost:${port}${server.graphqlPath}`
   )

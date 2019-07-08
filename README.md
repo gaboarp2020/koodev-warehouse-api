@@ -1,7 +1,5 @@
 # Koodev Warehouse App
 
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
-
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 Koodev Warehouse App es una aplicación para la gestión de inventario, desarrollada para la asignatura de Complementaria I de la Universidad Nueva Esparta por:
@@ -20,11 +18,16 @@ Koodev Warehouse App - API requiere de [Node.js](https://nodejs.org/) v8+ para c
 
 ```sh
 $ cd koodev-warehouse-api
+
 $ npm install
+<<<<<<< HEAD
 ```
     or
 
 ```sh
+=======
+    #or
+>>>>>>> b0c2df328cec0bcb121b2f14aca431daef1449b1
 $ yarn install
 ```
 
@@ -32,10 +35,14 @@ $ yarn install
 
 ```sh
 $ npm install -g sequelize-cli
+<<<<<<< HEAD
 ```
     or
 
 ```sh
+=======
+    #or
+>>>>>>> b0c2df328cec0bcb121b2f14aca431daef1449b1
 $ yarn add -g sequelize-cli
 ```
 
@@ -57,10 +64,14 @@ $ sequelize db:migrate
 
 ```sh
 $ yarn serve
+<<<<<<< HEAD
 ```
     or
 
 ```sh
+=======
+    #or
+>>>>>>> b0c2df328cec0bcb121b2f14aca431daef1449b1
 $ node server
 ```
 
