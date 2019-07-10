@@ -21,7 +21,7 @@ $ cd koodev-warehouse-api
 
 $ npm install
 ```
-    or
+   or
 
 ```sh
 $ yarn install
@@ -32,7 +32,7 @@ $ yarn install
 ```sh
 $ npm install -g sequelize-cli
 ```
-    or
+   or
 
 ```sh
 $ yarn add -g sequelize-cli
@@ -57,7 +57,7 @@ $ sequelize db:migrate
 ```sh
 $ yarn serve
 ```
-    or
+   or
 
 ```sh
 $ node server
