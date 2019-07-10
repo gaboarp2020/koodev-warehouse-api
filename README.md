@@ -1,6 +1,6 @@
 # Koodev Warehouse App
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Koodev Warehouse App es una aplicación para la gestión de inventario, desarrollada para la asignatura de Complementaria I de la Universidad Nueva Esparta por:
 
