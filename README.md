@@ -20,14 +20,10 @@ Koodev Warehouse App - API requiere de [Node.js](https://nodejs.org/) v8+ para c
 $ cd koodev-warehouse-api
 
 $ npm install
-<<<<<<< HEAD
 ```
     or
 
 ```sh
-=======
-    #or
->>>>>>> b0c2df328cec0bcb121b2f14aca431daef1449b1
 $ yarn install
 ```
 
@@ -35,14 +31,10 @@ $ yarn install
 
 ```sh
 $ npm install -g sequelize-cli
-<<<<<<< HEAD
 ```
     or
 
 ```sh
-=======
-    #or
->>>>>>> b0c2df328cec0bcb121b2f14aca431daef1449b1
 $ yarn add -g sequelize-cli
 ```
 
@@ -64,14 +56,10 @@ $ sequelize db:migrate
 
 ```sh
 $ yarn serve
-<<<<<<< HEAD
 ```
     or
 
 ```sh
-=======
-    #or
->>>>>>> b0c2df328cec0bcb121b2f14aca431daef1449b1
 $ node server
 ```
 
