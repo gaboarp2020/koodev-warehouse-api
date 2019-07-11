@@ -17,14 +17,11 @@ module.exports = {
       content: {
         type: Sequelize.INTEGER
       },
-      unity: {
+      unit: {
         type: Sequelize.STRING
       },
       price: {
         type: Sequelize.FLOAT
-      },
-      quantity: {
-        type: Sequelize.INTEGER
       },
       photo: {
         type: Sequelize.STRING
