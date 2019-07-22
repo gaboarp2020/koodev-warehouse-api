@@ -5,8 +5,8 @@ const express = require('express')
 const {
   ApolloServer
 } = require('apollo-server-express')
+const jwt = require('jsonwebtoken')
 const cors = require('cors')
-const checkToken = require('./utils/middlewares/checkToken')
 
 // GraphQL Schema
 const typeDefs = require('./lib/schema/typeDefs')
@@ -19,16 +19,27 @@ const models = require('./models')
 
 require('dotenv').config()
 
-// JWT_SECRET
-const secret = process.env.JWT_SECRET
+// JWT
+const SECRET = process.env.JWT_SECRET
 
-// Apollo Server instance
+// Apollo Server Instance
 const server = new ApolloServer({
   typeDefs,
   resolvers,
-  context: {
-    models
-  }
+  context: ({
+    req
+  }) => {
+    const tokenWithBearer = req.headers.authorization || ''
+    const token = tokenWithBearer.split(' ')[1]
+    const user = jwt.verify(token, SECRET, function (err, decoded) {
+      return decoded ? decoded.user : null
+    });
+    console.log('User: ' + JSON.stringify(user), 'Token: ' + token)
+    return {
+      models,
+      user
+    }
+  },
 })
 
 // Express Execute
@@ -37,9 +48,6 @@ const port = process.env.PORT
 
 // Cors Middleware
 app.use(cors())
-
-// Check Token Middleware
-// app.use(checkToken)
 
 // Apollo Middleware
 server.applyMiddleware({

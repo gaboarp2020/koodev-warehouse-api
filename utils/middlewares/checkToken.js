@@ -14,6 +14,7 @@ const checkToken = async req => {
         req.user = user
     } catch (err) {
         console.log(err)
+        console.log(req.headers.authorization)
     }
     req.next()
 }
