@@ -47,7 +47,7 @@ const app = express()
 const port = process.env.PORT
 
 // Cors Middleware
-app.use(cors())
+app.use(cors('*'))
 
 // Apollo Middleware
 server.applyMiddleware({
