@@ -35,7 +35,7 @@ $ npm install -g sequelize-cli
    or
 
 ```sh
-$ yarn add -g sequelize-cli
+$ yarn global add sequelize-cli
 ```
 
 3er paso: copiar el archivo .env.example y renombrarlo a .env
