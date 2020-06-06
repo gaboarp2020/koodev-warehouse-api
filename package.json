@@ -7,7 +7,7 @@
     "serve": "nodemon -e js,graphql server"
   },
   "dependencies": {
-    "apollo-server-express": "^2.6.4",
+    "apollo-server-express": "^2.14.2",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "dotenv": "^8.0.0",
